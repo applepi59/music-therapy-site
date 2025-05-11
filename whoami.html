@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Who Am I</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -12,20 +12,45 @@
       margin: 0;
       padding: 0;
     }
-    header {
-      background: url('https://9253440.fs1.hubspotusercontent-na1.net/hubfs/9253440/Woman-listening-to-music-in-headphones-music-relaxation-for-stress.jpg') center/cover no-repeat;
+    .top-banner {
+      background: url('https://media.wired.com/photos/6441cc2e6b2fffe52ad78d24/4:3/w_2139,h_1604,c_limit/The-Sludgification-Of-Music-Business-503493283.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 120px 20px 80px;
       position: relative;
     }
-    header h1 {
+    .top-banner h1 {
       font-size: 48px;
       background-color: rgba(0, 0, 0, 0.4);
       display: inline-block;
       padding: 10px 20px;
       border-radius: 8px;
     }
+
+    nav.navbar {
+      background: white;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav.navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      padding: 15px 0;
+      margin: 0;
+    }
+    nav.navbar ul li a {
+      text-decoration: none;
+      color: #007377;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    nav.navbar ul li a:hover {
+      color: #004c5a;
+    }
+
     section {
       max-width: 900px;
       margin: 40px auto;
@@ -63,9 +88,23 @@
   </style>
 </head>
 <body>
-  <header>
+
+  <header class="top-banner">
     <h1>Who Am I</h1>
   </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">The Need</a></li>
+      <li><a href="index.html#purpose">Purpose</a></li>
+      <li><a href="index.html#methods">Methods</a></li>
+      <li><a href="index.html#results">Results</a></li>
+      <li><a href="index.html#activity">Activity</a></li>
+      <li><a href="whoami.html" class="active">Who Am I</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="playlists.html">Playlists</a></li>
+    </ul>
+  </nav>
 
   <section>
     <h2>About Me</h2>
@@ -76,7 +115,7 @@
     <h2>Why This Research Matters</h2>
     <p>Through my survey, I found that a majority of students report daily or weekly stress symptoms. The chart below is one of the key responses from my questionnaire, showing just how widespread this problem is among my peers.</p>
 
-    <img src="2a03d1a3-6a70-4b29-a390-3ca08add2307.png" alt="Survey results chart">
+    <img src="results.img.jpeg" alt="Survey results chart">
 
     <p>This research is not just academic — it’s personal. It reflects my life and the lives of many others who are looking for non-clinical, creative ways to cope. That is why I believe music, something we already have in our lives, can also become part of the solution.</p>
 
@@ -90,5 +129,6 @@
   <footer>
     <p>Created with purpose by Zinor Ayanat | NIS Atyrau | 2025</p>
   </footer>
+
 </body>
 </html>
